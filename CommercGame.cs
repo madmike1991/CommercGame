@@ -10,13 +10,16 @@ namespace CommercGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Commerc \nNavigating the world on Command Line! \nWhat is your name, traveller?");
-            var Name = Console.ReadLine();
-            var Money = 500.0;
-            Player name = new Player(Name, Money);
-            Console.WriteLine($"Hi {Name}!");
-            Console.WriteLine("So you can start your journey, we have given you 500 coins of the finest gold! Why not buy a ship so you can travel further?");
-            Console.ReadLine();
+            Console.WriteLine("Commerc\nNavigating the world on Command Line! \nWhat is your name, traveller?\n");
+            var name = Console.ReadLine();
+            Player Player = new Player();
+            Player.name = name;
+            Console.WriteLine($"Hi {name}!\n So you can start your journey, we have given you 500 coins of the finest gold!\n Why not buy a ship so you can travel further?");
+            Ship ship = new Ship();
+            ship.BuyShip();    
+            
+            
+
 
 
 

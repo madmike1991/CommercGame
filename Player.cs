@@ -13,14 +13,15 @@ namespace CommercGame
         class Player
 
         {
-        String name;
-        double money;
+        public String name;
+        public static double money = 500.0;
 
 
-        public Player(String name, double money)
+        public Player()
         {
-            this.name = name;
-            this.money = money;
+            String name;
+            double money;
+           
         }   
 
         public double GetMoney()
