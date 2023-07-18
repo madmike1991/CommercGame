@@ -33,5 +33,13 @@ namespace CommercGame
         {
             return ShipSize;
         }
+
+        public void BuyShip()
+        {
+            Console.WriteLine("Which should would you like to buy?");
+            Console.WriteLine("1 - Rubber Dinghy 100$;\n2 - Jon Boat 250$\n3 - Pontoon Boat 350$    ");
+            Console.ReadLine();
+            var Boat
+        }
     }
 }
