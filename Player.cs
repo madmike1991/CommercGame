@@ -26,7 +26,7 @@ namespace CommercGame
         {
             return PShip;
         }
-        public double GetMoney()
+        public static double GetMoney()
         {
             return money;
         }
@@ -39,8 +39,6 @@ namespace CommercGame
             Console.WriteLine("Name: " + GetName());
             Console.WriteLine("Money: " + GetMoney());
             Console.WriteLine("Ship: " + GetPlayerShip());
-                       
-
         }
        
     }
