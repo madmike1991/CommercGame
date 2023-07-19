@@ -10,29 +10,40 @@ namespace CommercGame
 { 
     
 
-        class Player
+      public class Player
 
         {
-        public String name;
-        public static double money = 500.0;
-        public static string PShip;
+        public string Name {  get; private set; }
+        public double Money { get; private set; }
+        public string PShip { get; private set; }
 
 
-        public Player()
+        public Player(string name)
         {
+            Name = name;
+            Money = 500.0;
+
          
         }   
         public string GetPlayerShip()
         {
             return PShip;
         }
-        public static double GetMoney()
+        public double GetMoney()
         {
-            return money;
+            return Money;
         }
         public string GetName()
         {
-            return name;
+            return Name;
+        }
+        public void SetMoney(double value)
+        {
+            Money = value;
+        }
+        public void SetPShip(string pship)
+        {
+            PShip = pship;
         }
         public void PlayerStats()
         {
