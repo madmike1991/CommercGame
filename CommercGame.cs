@@ -40,7 +40,7 @@ namespace CommercGame
 
                         var shipType = "Rubber Dinghy";
                         var shipSize = 100;
-                        var shipPrice = 600.0;
+                        var shipPrice = 100.0;
                         if (shipPrice < player.Money)
                         {
                             var money = player.Money - shipPrice;
@@ -90,6 +90,9 @@ namespace CommercGame
                         break;
                 }
                 player.PlayerStats();
+                Console.WriteLine("Now that you have a boat, you can travel the world and start trading resources. Right now, you're in Lisbon.\nWould you like to travel or see what the merchants have for sale?");
+                Console.WriteLine("1 - Travel\n2 - See merchants");
+                Console.ReadLine();
 
 
             }
