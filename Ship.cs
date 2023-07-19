@@ -46,6 +46,7 @@ namespace CommercGame
                     ShipSize = 100;
                     ShipPrice = 100.0;
                     Player.money -= ShipPrice;
+                    Player.PShip = "Rubber Dinghy";
                     Console.WriteLine($"That won't get you very far, but I guess it's better than nothing...\n You paid 100$ for the Boat. You have {Player.money}$ left");
                     Console.ReadLine();
                     break;
@@ -55,6 +56,7 @@ namespace CommercGame
                     ShipSize = 200;
                     ShipPrice = 250.0;
                     Player.money -= ShipPrice;
+                    Player.PShip = "Jon Boat";
                     Console.WriteLine($"AH! A Jon Boat... This one is in good condition. Happy travelling!\n You paid 250$ for the Boat. You have {Player.money}$ left");
                     Console.ReadLine();
                     break;
@@ -64,6 +66,7 @@ namespace CommercGame
                     ShipSize = 400;
                     ShipPrice = 350.0;
                     Player.money -= ShipPrice;
+                    Player.PShip = "Pontoon Boat";
                     Console.WriteLine($"A fine choice! This one got loads of storage!\n You paid 350$ for the Boat. You have {Player.money}$ left");
                     Console.ReadLine();
                     break;

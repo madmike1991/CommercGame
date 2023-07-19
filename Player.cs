@@ -15,15 +15,17 @@ namespace CommercGame
         {
         public String name;
         public static double money = 500.0;
+        public static string PShip;
 
 
         public Player()
         {
-            String name;
-            double money;
-           
+         
         }   
-
+        public string GetPlayerShip()
+        {
+            return PShip;
+        }
         public double GetMoney()
         {
             return money;
@@ -32,7 +34,14 @@ namespace CommercGame
         {
             return name;
         }
+        public void PlayerStats()
+        {
+            Console.WriteLine("Name: " + GetName());
+            Console.WriteLine("Money: " + GetMoney());
+            Console.WriteLine("Ship: " + GetPlayerShip());
+                       
 
+        }
        
     }
     
